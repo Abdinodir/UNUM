@@ -15,6 +15,40 @@ milliy taomlardan tuzilgan.
 
 ---
 
+## ▶︎ Demo — ishlaydigan ilovani sinab ko'rish
+
+**[⬇︎ UNUM 1.1.0 · APK yuklab olish](../../releases/latest)** — Android 8.0+, 53 MB
+
+Bu haqiqiy, to'liq ishlaydigan ilova: ro'yxatdan o'tib, maqsad qo'yib,
+kunni rejalashtirib, Life Score'ni ko'rishingiz mumkin.
+
+**O'rnatish:** APK'ni yuklab oling → oching → Android "noma'lum manbadan
+o'rnatish" so'rasa ruxsat bering. Kirish **Google hisobi** orqali.
+
+> **Nega Play Market'dan emas?**
+> Ilova Play Market'da chiqarish jarayonida. Google shaxsiy dasturchi
+> hisoblari uchun yangi ilovani majburiy **yopiq test bosqichidan**
+> o'tkazadi (kamida 12 ta tester, 14 kun uzluksiz) — shundan keyin
+> produksiyaga chiqariladi. iOS versiyasi tayyorlanmoqda.
+>
+> Shu sabab ko'rib chiqish uchun bu yerga to'g'ridan-to'g'ri o'rnatiladigan
+> APK qo'yilgan.
+
+### Ekranlar
+
+<p align="center">
+  <img src="store/screenshots/01-asosiy.png"       width="19%" alt="Bosh ekran — Life Score" />
+  <img src="store/screenshots/02-reja-bugun.png"   width="19%" alt="Kunlik reja" />
+  <img src="store/screenshots/05-maqsad.png"       width="19%" alt="Maqsadlar" />
+  <img src="store/screenshots/04-fokus.png"        width="19%" alt="Fokus taymer" />
+  <img src="store/screenshots/07-ai-coach.png"     width="19%" alt="AI kouch" />
+</p>
+<p align="center">
+  <sub>Life Score · Kunlik reja · Maqsadlar · Fokus · AI kouch</sub>
+</p>
+
+---
+
 ## Nima qiladi
 
 **Maqsad → vazifa → odat** zanjiri. Katta maqsad AI yordamida bosqichlarga
