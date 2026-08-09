@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UNUM — AI sog'liq yordamchingiz</title>
+<meta name="description" content="UNUM — ovqatlanishingizni tahlil qilib, har kuni sog'liq ballini beradigan sun'iy intellekt yordamchisi.">
+<style>
+  :root {
+    --bg: #f8fafc; --fg: #0f172a; --muted: #64748b;
+    --card: #ffffff; --line: #e2e8f0; --brand: #0ea5e9; --brand-dark: #0284c7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0b1220; --fg:#e2e8f0; --muted:#94a3b8; --card:#111c30; --line:#1e293b; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 28px 0; }
+  .logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 22px; letter-spacing: .5px; }
+  .mark {
+    width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center;
+    background: linear-gradient(135deg, var(--brand), var(--brand-dark)); color: #fff; font-size: 18px;
+  }
+  .logo span { color: var(--brand); }
+  .hero { padding: 48px 0 40px; }
+  h1 { font-size: clamp(30px, 6vw, 46px); line-height: 1.15; margin: 0 0 16px; letter-spacing: -0.5px; }
+  .lead { font-size: 18px; color: var(--muted); max-width: 620px; margin: 0 0 28px; }
+  .cta {
+    display: inline-block; background: var(--brand); color: #fff; text-decoration: none;
+    padding: 13px 26px; border-radius: 12px; font-weight: 700;
+  }
+  .cta:hover { background: var(--brand-dark); }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); padding: 20px 0 48px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
+  .card h3 { margin: 0 0 8px; font-size: 17px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .emoji { font-size: 26px; display: block; margin-bottom: 10px; }
+  .note {
+    background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--brand);
+    border-radius: 12px; padding: 16px 18px; color: var(--muted); font-size: 14px; margin-bottom: 40px;
+  }
+  footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--muted); font-size: 14px; }
+  footer a { color: var(--brand); text-decoration: none; margin-right: 18px; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo"><span class="mark">⚡</span>UN<span>UM</span></div>
+  </header>
+
+  <section class="hero">
+    <h1>Kaloriya sanamang.<br>Sog'liq ballingizni kuzating.</h1>
+    <p class="lead">
+      UNUM — sun'iy intellektga asoslangan sog'liq yordamchisi. Har kuni ovqatlanishingiz,
+      suv iste'moli va harakatingizni tahlil qilib, sizga bitta tushunarli ko'rsatkich beradi:
+      <strong>UNUM Health Score</strong>.
+    </p>
+    <a class="cta" href="#">Google Play'da tez orada</a>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <span class="emoji">📷</span>
+      <h3>Rasmga oling — tayyor</h3>
+      <p>Taomni suratga oling, AI uni taniydi va kaloriya, oqsil, shakar hamda tuz miqdorini hisoblaydi.</p>
+    </div>
+    <div class="card">
+      <span class="emoji">🎯</span>
+      <h3>UNUM Health Score</h3>
+      <p>0 dan 100 gacha kunlik ball: oqsil, sabzavot, shakar, suv va harakat asosida hisoblanadi.</p>
+    </div>
+    <div class="card">
+      <span class="emoji">⚠️</span>
+      <h3>Profilaktik ogohlantirish</h3>
+      <p>Kasal bo'lgandan keyin emas, undan oldin: «So'nggi 14 kunda sabzavot me'yorning 31% i edi».</p>
+    </div>
+    <div class="card">
+      <span class="emoji">🤖</span>
+      <h3>Shaxsiy AI kouch</h3>
+      <p>Nima pishirishni bilmayapsizmi? Uyingizdagi mahsulotlardan kelib chiqib taklif beradi.</p>
+    </div>
+  </section>
+
+  <div class="note">
+    <strong>Muhim eslatma.</strong> UNUM tibbiy tashxis qo'ymaydi va davolash tavsiyasi bermaydi.
+    Ilova beradigan ma'lumotlar umumiy ma'lumot xarakteriga ega. Sog'ligingiz bo'yicha qaror qabul
+    qilishdan oldin shifokor bilan maslahatlashing.
+  </div>
+
+  <footer>
+    <a href="/privacy.html">Maxfiylik siyosati</a>
+    <a href="/delete-account.html">Hisobni o'chirish</a>
+    <a href="mailto:telba0702@gmail.com">Aloqa</a>
+    <p>© 2026 UNUM</p>
+  </footer>
+</div>
+</body>
+</html>

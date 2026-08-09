@@ -1,0 +1,51 @@
+# ─── Sirlar (HECH QACHON commit qilinmasin) ───────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.p8
+*.key
+secrets/
+
+# ─── Ma'lumotlar bazasi (haqiqiy foydalanuvchi ma'lumotlari) ──
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# ─── Imzolash kalitlari ───────────────────────────────────────
+*.jks
+*.keystore
+key.properties
+google-services.json
+GoogleService-Info.plist
+
+# ─── Server / deploy skriptlari (ichki manzillar) ─────────────
+deploy.sh
+unum.sh
+
+# ─── Build natijalari ─────────────────────────────────────────
+node_modules/
+dist/
+build/
+coverage/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+mobile/ios/Pods/
+*.apk
+*.aab
+
+# ─── Boshqa ───────────────────────────────────────────────────
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# ─── Gradle / IDE keshlari ────────────────────────────────────
+.gradle/
+.kotlin/
+local.properties
+*.iml
+.symlinks/

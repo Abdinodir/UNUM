@@ -1,0 +1,43 @@
+{
+  "name": "unum-backend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "build": "esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
+    "start": "node dist/server.cjs",
+    "clean": "rm -rf dist server.js",
+    "lint": "tsc --noEmit",
+    "test:goals": "rm -f /tmp/unum-goals-test.db* && DB_PATH=/tmp/unum-goals-test.db JWT_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tsx test/goals.ts",
+    "test": "npm run test:day && npm run test:goals && npm run test:tasks && npm run test:habits && npm run test:focus && npm run test:lifescore && npm run test:review",
+    "test:day": "tsx test/day.ts",
+    "test:tasks": "rm -f /tmp/unum-tasks-test.db* && DB_PATH=/tmp/unum-tasks-test.db JWT_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tsx test/tasks.ts",
+    "test:habits": "rm -f /tmp/unum-habits-test.db* && DB_PATH=/tmp/unum-habits-test.db JWT_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tsx test/habits.ts",
+    "test:lifescore": "rm -f /tmp/unum-life-test.db* && DB_PATH=/tmp/unum-life-test.db JWT_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tsx test/lifescore.ts",
+    "test:focus": "rm -f /tmp/unum-focus-test.db* && DB_PATH=/tmp/unum-focus-test.db JWT_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tsx test/focus.ts",
+    "test:review": "rm -f /tmp/unum-review-test.db* && DB_PATH=/tmp/unum-review-test.db JWT_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tsx test/review.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.11.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.6.1",
+    "jose": "^6.2.7",
+    "jsonwebtoken": "^9.0.3",
+    "openai": "^4.104.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^22.14.0",
+    "esbuild": "^0.25.0",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2"
+  }
+}

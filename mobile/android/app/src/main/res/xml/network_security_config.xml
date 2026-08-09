@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Cleartext HTTP is disabled everywhere except loopback.
+
+  Loopback is only reachable from the device itself, so allowing it costs
+  nothing in production, and it is what lets a USB-connected phone talk to a
+  development server through `adb reverse`.
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">127.0.0.1</domain>
+        <domain includeSubdomains="false">localhost</domain>
+    </domain-config>
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>

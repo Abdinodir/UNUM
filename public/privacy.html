@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UNUM — Maxfiylik siyosati</title>
+<style>
+  :root { --bg:#f8fafc; --fg:#0f172a; --muted:#475569; --card:#fff; --line:#e2e8f0; --brand:#0ea5e9; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0b1220; --fg:#e2e8f0; --muted:#94a3b8; --card:#111c30; --line:#1e293b; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:40px 20px 80px; }
+  a { color:var(--brand); }
+  h1 { font-size:30px; margin:0 0 6px; letter-spacing:-0.4px; }
+  h2 { font-size:20px; margin:34px 0 10px; }
+  .date { color:var(--muted); font-size:14px; margin-bottom:28px; }
+  table { width:100%; border-collapse:collapse; margin:14px 0; font-size:15px; display:block; overflow-x:auto; }
+  th, td { border:1px solid var(--line); padding:10px 12px; text-align:left; vertical-align:top; }
+  th { background:var(--card); font-weight:700; }
+  .box { background:var(--card); border:1px solid var(--line); border-left:4px solid var(--brand);
+         border-radius:10px; padding:14px 16px; margin:18px 0; color:var(--muted); font-size:15px; }
+  ul { padding-left: 22px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p><a href="/">← UNUM</a></p>
+  <h1>Maxfiylik siyosati</h1>
+  <p class="date">Oxirgi yangilanish: 2026-yil 27-iyul</p>
+
+  <p>
+    Ushbu hujjat UNUM mobil ilovasi (keyingi o'rinlarda — «Ilova») foydalanuvchilarning
+    ma'lumotlarini qanday to'plashi, ishlatishi va himoya qilishini tushuntiradi. Ilovadan
+    foydalanish orqali siz ushbu shartlarga rozilik bildirasiz.
+  </p>
+
+  <h2>1. Biz to'playdigan ma'lumotlar</h2>
+  <table>
+    <tr><th>Toifa</th><th>Nima</th><th>Nima uchun</th></tr>
+    <tr>
+      <td>Hisob ma'lumotlari</td>
+      <td>Email manzil, ism, parol (bcrypt bilan shifrlangan holda saqlanadi)</td>
+      <td>Hisobga kirish va ma'lumotlaringizni qurilmalar o'rtasida sinxronlash</td>
+    </tr>
+    <tr>
+      <td>Sog'liq va jismoniy ma'lumotlar</td>
+      <td>Yosh, jins, bo'y, vazn, maqsad vazn, faollik darajasi, parhez turi</td>
+      <td>Kunlik kaloriya/oqsil me'yorini va Health Score'ni hisoblash</td>
+    </tr>
+    <tr>
+      <td>Ovqatlanish yozuvlari</td>
+      <td>Kiritgan taomlaringiz, suv iste'moli, tana o'lchovlari, mashg'ulotlar</td>
+      <td>Kunlik tahlil, statistika va shaxsiy tavsiyalar</td>
+    </tr>
+    <tr>
+      <td>Xarajat yozuvlari</td>
+      <td>Oziq-ovqatga sarflagan mablag'ingiz haqidagi yozuvlar</td>
+      <td>Byudjet tahlili</td>
+    </tr>
+    <tr>
+      <td>Taom rasmlari</td>
+      <td>Siz suratga olgan taom rasmlari</td>
+      <td>Rasmni tanib, oziqlanish qiymatini baholash</td>
+    </tr>
+    <tr>
+      <td>AI suhbat</td>
+      <td>AI kouch bilan yozishmalaringiz</td>
+      <td>Suhbat tarixini saqlash va kontekstli javob berish</td>
+    </tr>
+  </table>
+
+  <p>
+    Ilova <strong>joylashuvingizni</strong>, <strong>kontaktlaringizni</strong>,
+    <strong>SMS yoki qo'ng'iroqlaringizni</strong> to'plamaydi va reklama identifikatorlaridan
+    foydalanmaydi.
+  </p>
+
+  <h2>2. Taom rasmlari qanday ishlanadi</h2>
+  <div class="box">
+    Siz suratga olgan taom rasmi tahlil qilish uchun <strong>OpenAI</strong> xizmatiga yuboriladi.
+    Tahlil natijasi (taom nomi va oziqlanish qiymati) sizning hisobingizga saqlanadi,
+    <strong>rasmning o'zi esa bizning serverimizda saqlanmaydi</strong> — u faqat so'rov davomida
+    xotirada bo'ladi va keyin o'chiriladi.
+  </div>
+
+  <h2>3. Health Connect va sog'liq ma'lumotlari</h2>
+  <div class="box">
+    <p>
+      UNUM Android'dagi <strong>Health Connect</strong> orqali quyidagi ma'lumotlarni
+      <strong>faqat O'QIYDI</strong>: <strong>kunlik qadam soni</strong>,
+      <strong>uyqu seanslari</strong> (yotish va turish vaqti) va
+      <strong>sarflangan kaloriya</strong>.
+    </p>
+    <p>
+      <strong>Nima uchun kerak:</strong> bu ma'lumotlar kunlik sog'liq ballini hisoblash va
+      haftalik hisobot tuzish uchun ishlatiladi. Ularsiz siz har bir qadamni va uyquni
+      qo'lda kiritishingizga to'g'ri kelardi.
+    </p>
+    <p>
+      <strong>Muhim kafolatlar:</strong>
+    </p>
+    <ul>
+      <li>UNUM Health Connect'ga hech narsa <strong>YOZMAYDI</strong> — faqat o'qiydi.</li>
+      <li>Sog'liq ma'lumoti <strong>uchinchi tomonga uzatilmaydi</strong>: OpenAI'ga ham,
+          reklama tarmoqlariga ham yuborilmaydi.</li>
+      <li>U <strong>reklama yoki marketing uchun ishlatilmaydi</strong> va hech kimga sotilmaydi.</li>
+      <li>Ruxsatni istalgan vaqtda Health Connect sozlamalaridan yoki telefon
+          sozlamalaridan bekor qilishingiz mumkin — ilova ruxsatsiz ham to'liq ishlaydi.</li>
+      <li>Hisobingizni o'chirsangiz, bizda saqlangan qadam va uyqu yozuvlari ham
+          birga o'chadi.</li>
+    </ul>
+    <p>
+      Qadam va uyqu qiymatlari sizning hisobingizga saqlanadi, chunki ball serverda
+      hisoblanadi va ilova, veb-sahifa hamda Telegram bot bir xil raqamni ko'rsatishi kerak.
+    </p>
+  </div>
+
+  <h2>4. Uchinchi tomon xizmatlari</h2>
+  <ul>
+    <li>
+      <strong>OpenAI</strong> — taom tahlili, ovqatlanish rejasi va AI kouch javoblari uchun.
+      OpenAI'ga yuboriladigan ma'lumotlar: taom matni yoki rasmi, oziqlanish maqsadlaringiz va
+      kunlik ko'rsatkichlaringiz. Ismingiz, emailingiz va parolingiz hech qachon yuborilmaydi.
+      Batafsil: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI Privacy Policy</a>.
+    </li>
+  </ul>
+
+  <h2>5. Ma'lumotlar qayerda saqlanadi</h2>
+  <p>
+    Barcha shaxsiy ma'lumotlar UNUM boshqaradigan serverda, shifrlangan HTTPS ulanish orqali
+    uzatiladi. Parollar hech qachon ochiq holda saqlanmaydi — faqat bcrypt xesh ko'rinishida.
+  </p>
+
+  <h2>6. Ma'lumotlaringiz ustidan nazorat</h2>
+  <ul>
+    <li><strong>Ko'rish va tahrirlash</strong> — ilovaning istalgan ekranidan.</li>
+    <li><strong>O'chirish</strong> — Profil → Hisobni o'chirish, yoki
+        <a href="/delete-account.html">shu sahifa orqali</a>. Hisob o'chirilganda unga tegishli
+        <em>barcha</em> yozuvlar (profil, taomlar, suv, vazn, xarajatlar, suhbatlar) darhol va
+        qaytarib bo'lmaydigan tarzda o'chiriladi.</li>
+    <li><strong>Parolni almashtirish</strong> — Profil → Parolni almashtirish.</li>
+  </ul>
+
+  <h2>7. Bolalar</h2>
+  <p>
+    Ilova 13 yoshdan kichik bolalar uchun mo'ljallanmagan va ulardan ataylab ma'lumot to'plamaydi.
+  </p>
+
+  <h2>8. Tibbiy ogohlantirish</h2>
+  <div class="box">
+    UNUM tibbiy vosita emas. U kasallikni aniqlamaydi, tashxis qo'ymaydi va davolamaydi.
+    Ilova beradigan barcha tavsiyalar umumiy ma'lumot xarakteriga ega. Parhez, dori yoki
+    davolanish bo'yicha qaror qabul qilishdan oldin malakali shifokor bilan maslahatlashing.
+  </div>
+
+  <h2>9. O'zgarishlar</h2>
+  <p>
+    Ushbu siyosat vaqti-vaqti bilan yangilanishi mumkin. Muhim o'zgarishlar haqida ilova orqali
+    xabar beramiz va yuqoridagi «oxirgi yangilanish» sanasini o'zgartiramiz.
+  </p>
+
+  <h2>10. Aloqa</h2>
+  <p>
+    Savollar yoki ma'lumotlaringiz bo'yicha so'rovlar uchun:
+    <a href="mailto:telba0702@gmail.com">telba0702@gmail.com</a>
+  </p>
+</div>
+</body>
+</html>

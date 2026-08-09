@@ -1,0 +1,6 @@
+{
+  "name": "UNUM",
+  "description": "UNUM — AI yordamida insonning kundalik hayotini yaxshilaydigan shaxsiy hamroh. Apple Design Award darajasidagi premium o'zbek tilidagi mobil ilova.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+/*
+ * Manbani ANIQ ko'rsatamiz. Tailwind v4 ning avtomatik aniqlashi git
+ * repozitoriysiga tayanadi — bu loyihada git yo'q, shuning uchun u hech qanday
+ * utility topmasdi va CSS faqat preflight'dan iborat bo'lib qolardi
+ * (ilova telefonda uslubsiz ochilgan edi).
+ */
+@source "./**/*.{ts,tsx}";
+@source "../index.html";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html,
+  body {
+    background-color: #0a0c0b;
+    color: #f2f5f4;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'SF Pro Text',
+      'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    /* Mobil ilova hissi: matn tanlash va tap-highlight o'chirilgan */
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    overscroll-behavior-y: none;
+  }
+
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Raqamlar jadval kabi tekis tursin (ballar, foizlar) */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Ingichka, deyarli ko'rinmas skrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+}
+
+/* Gorizontal karusel — skrollbar yashirilgan, snap yoqilgan */
+.snap-row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.snap-row::-webkit-scrollbar {
+  display: none;
+}
+.snap-row > * {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+}
+
+/* Harakatni kamaytirish sozlamasi yoqilgan bo'lsa animatsiyalarni o'chiramiz */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
