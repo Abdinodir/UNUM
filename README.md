@@ -209,7 +209,5 @@ kalitlaringiz kerak bo'ladi.
 
 ## Litsenziya
 
-© 2026 UNUM. Barcha huquqlar himoyalangan.
-
-Kod namoyish va ko'rib chiqish uchun ochiq. Tijoriy foydalanish, nusxalash
-yoki hosila ish yaratish — mualliflik ruxsatisiz taqiqlanadi.
+[MIT](LICENSE) © 2026 Abdinodir Abdunazarov. Kodni erkin ishlatish, o'zgartirish va
+tarqatish mumkin — faqat mualliflik va litsenziya matnini saqlab qoling.
